@@ -21,6 +21,11 @@
 ![Alt text](img/project_overview.png)
 ***
 # Setup
+## Prerequisites
+- Python
+- Docker
+## Run
+  git clone https://github.com/tmph2003/Crypto-Project.git
 ## Build Docker Compose
     docker compose up -d
 ## Using Grafana connect to MySQL
