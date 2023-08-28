@@ -97,7 +97,7 @@ services:
         mkdir jar_file
         cd jar_file
         wget -nc https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar
-        sleep 10
+        sleep 60
         /usr/bin/connect-standalone /etc/schema-registry/connect-avro-standalone.properties /etc/kafka/jdbc_sink_config.properties
         sleep infinity
   ksqldb-server:
@@ -125,7 +125,7 @@ services:
       - "-c"
       - |
         /etc/confluent/docker/run &
-        sleep 10
+        sleep 30
         ksql http://ksqldb-server:8088 <<EOF
         CREATE STREAM source (Symbol VARCHAR, Price INT, Updated_At VARCHAR) WITH ( KAFKA_TOPIC = 'json_data', VALUE_FORMAT = 'JSON');
         SET 'auto.offset.reset' = 'earliest';
