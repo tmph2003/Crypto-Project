@@ -22,7 +22,8 @@
 ***
 # Setup
 ## Prerequisites
-- Python
+- Python (<= v3.9.10)
+- JDK 11
 - Docker
 ## Run
     git clone https://github.com/tmph2003/Crypto-Project.git
