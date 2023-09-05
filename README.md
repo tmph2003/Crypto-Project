@@ -27,8 +27,10 @@
 - Docker
 ## Run
     git clone https://github.com/tmph2003/Crypto-Project.git
-## Build Docker Compose
+    #Build Docker Compose
     docker compose up -d
+    #run python file
+    python Craw_Coin_Price.py
 ## Using Grafana connect to MySQL
     localhost:3000
     username: admin
